@@ -1,10 +1,21 @@
 @import "./home.css";
+@import "/css/nav.css";
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
 :root {
   /* Font Weight */
   --weight-bold: 700;
@@ -23,6 +34,7 @@ h1 {
   font-weight: var(--weight-bold);
   margin: 16px 0;
   font-size: 50px;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 h2 {
