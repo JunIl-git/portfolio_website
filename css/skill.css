@@ -1,0 +1,63 @@
+#skills {
+  background: black;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+#skills p {
+  margin-bottom: 20px;
+}
+
+.skillset {
+  padding: 20px;
+  height: 250px;
+  background-color: #46474b;
+}
+
+.skillset__title {
+  margin: 0 auto 15px;
+}
+
+.skillset__container {
+  margin-bottom: 10px;
+}
+
+.skillset__container__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillset__container__gauge_max {
+  height: 5px;
+  background: #2f3031;
+}
+
+.skillset__container__gauge__html {
+  width: 90%;
+  height: 100%;
+  background: #e1b12c;
+}
+
+.skillset__container__gauge__css {
+  width: 80%;
+  height: 100%;
+  background: #e1b12c;
+}
+
+.skillset__container__gauge__js {
+  width: 70%;
+  height: 100%;
+  background: #e1b12c;
+}
+
+.skillset__container__gauge__react {
+  width: 65%;
+  height: 100%;
+  background: #e1b12c;
+}
+
+.skillset__container__gauge__ts {
+  width: 60%;
+  height: 100%;
+  background: #e1b12c;
+}

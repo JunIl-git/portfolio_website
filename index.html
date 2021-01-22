@@ -9,7 +9,8 @@
     <link rel="icon" href="./imgs/favicon.ico"/>
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous">
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -32,50 +33,58 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <h3 class="home__title">안녕하세요:) 프론트엔드 신입 개발자 신준일입니다!</h1>
-        <h3 class="home__description">끊임없는 배움을 통한 성장을 위해 고민합니다.</h2>
+        <h3 class="home__title">프론트엔드 개발자 신준일입니다.</h3>
+        <p class="home__description1">자바스크립트를 주로 사용하는 프론트엔드 주니어 개발자입니다. </p>
+        <p class="home__description2">최근에는 타입스크립트에 많은 관심을 가지고 있습니다.</p>
         <div class="home__box">
-            <div class="home__box__box"></div>
-            <div class="home__box__first-name">Shin</div>
+            <div class="home__box__box"><div class="home__box__first-name">Shin</div>
             <div class="home__box__second-name">JunIl</div>
-            <h1 class="home__box__title">Front_end</h1>
+            <h1 class="home__box__title">Front_end</h1></div>
         </div>
     </section>
     <!-- About -->
-    <section id="about">
-        <h1 class="about__title">About Me</h1>
+    <section id="about" class="section">
+        <h1 class="about__title title">About Me</h1>
         <div class="about__contents">
             <img src="./imgs/프로필fin.png" alt="avatar" class="about__contents__avatar">
             <div class="about__contents__profile">
-                <h3>Profile</h3>
+                <h2>Profile</h3>
                 <h4>이름: 신준일</h4>
                 <h4>나이: 25세 (1997)</h4>
                 <h4>연락처: 010-4126-5138</h4>
-                <h4>E-mail: wnsdlf9630@naver.com</h4>
+                <h4>E-mail: shinjunil1997@gmail.com</h4>
             </div>
         </div>
         <div class="about__language">
-            <div class="about__language__html">
-                <i class="fab fa-html5 fa-10x"></i>
+            <div class="about__language__html ">
+                <div class="about__language__circle">
+                    <i class="fab fa-html5 fa-10x"></i>
+                </div>
                 <h4>HTML</h4>
             </div>
-            <div class="about__language__css">
-                <i class="fab fa-css3-alt fa-10x"></i>
+            <div class="about__language__css ">
+                <div class="about__language__circle">
+                    <i class="fab fa-css3-alt fa-10x"></i>
+                </div>
                 <h4>CSS</h4>
             </div>
-            <div class="about__language__js">
-                <i class="fab fa-js-square fa-10x"></i>
+            <div class="about__language__js ">
+                <div class="about__language__circle">
+                    <i class="fab fa-js-square fa-10x"></i>
+                </div>
                 <h4>Javascript</h4>
             </div>
-            <div class="about__language__react">
-                <i class="fab fa-react fa-10x"></i>
+            <div class="about__language__react ">
+                <div class="about__language__circle">
+                    <i class="fab fa-react fa-10x"></i>
+                </div>
                 <h4>React</h4>
             </div>
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
+    <section id="skills" class="section">
+        <h1 class="title">Skills</h1>
         <p>Sit ullamco et sit reprehenderit eiusmod. Enim veniam qui eu ea quis nulla nostrud dolore consequat laborum ipsum ut in. Esse occaecat nulla magna nulla aute officia nostrud adipisicing id. Laboris qui dolor sunt quis voluptate voluptate proident sit.</p>
         <div class="skillset">
             <div class="skillset__title">
@@ -87,7 +96,7 @@
                     <span class="skillset__container__description__persent">90%</span>
                 </div>
                 <div class="skillset__container__gauge_max">
-                    <div class="skillset__container__gauge__current"></div>
+                    <div class="skillset__container__gauge__html"></div>
                 </div>
             </div>
             <div class="skillset__container">
@@ -96,7 +105,7 @@
                     <span class="skillset__container__description__persent">80%</span>
                 </div>
                 <div class="skillset__container__gauge_max">
-                    <div class="skillset__container__gauge__current"></div>
+                    <div class="skillset__container__gauge__css"></div>
                 </div>
             </div>
             <div class="skillset__container">
@@ -105,7 +114,7 @@
                     <span class="skillset__container__description__persent">70%</span>
                 </div>
                 <div class="skillset__container__gauge_max">
-                    <div class="skillset__container__gauge__current"></div>
+                    <div class="skillset__container__gauge__js"></div>
                 </div>
             </div>
             <div class="skillset__container">
@@ -114,7 +123,7 @@
                     <span class="skillset__container__description__persent">65%</span>
                 </div>
                 <div class="skillset__container__gauge_max">
-                    <div class="skillset__container__gauge__current"></div>
+                    <div class="skillset__container__gauge__react"></div>
                 </div>
             </div>
             <div class="skillset__container">
@@ -123,7 +132,7 @@
                     <span class="skillset__container__description__persent">60%</span>
                 </div>
                 <div class="skillset__container__gauge_max">
-                    <div class="skillset__container__gauge__current"></div>
+                    <div class="skillset__container__gauge__ts"></div>
                 </div>
             </div>
         </div>

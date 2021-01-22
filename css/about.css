@@ -1,0 +1,63 @@
+#about {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.section {
+  text-align: center;
+  padding: 60px;
+}
+
+.about__contents__avatar {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.about__contents {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.about__contents__profile {
+  text-align: left;
+  width: 347px;
+  height: 333px;
+  padding: 40px;
+}
+
+.about__contents__profile h2 {
+  margin-bottom: 25px;
+}
+
+.about__contents__profile h4 {
+  margin-bottom: 10px;
+  font-weight: var(--weight-regular);
+}
+
+.about__language {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.about__language__circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__language h4 {
+  color: black;
+  margin-top: 30px;
+}
+
+.about__contents__profile h4 {
+  margin-bottom: 25px;
+}

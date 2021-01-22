@@ -1,11 +1,16 @@
 #navbar {
+  width: 100%;
+  z-index: 1;
   display: flex;
-  background: rgba(00, 00, 00, 0.9);
+  background: rgba(00, 00, 00, 0.8);
   color: white;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
   font-family: "Balsamiq Sans", cursive;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar__menu {

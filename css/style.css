@@ -1,12 +1,19 @@
 @import "./home.css";
-@import "/css/nav.css";
-
+@import "./nav.css";
+@import "./home.css";
+@import "./about.css";
+@import "./skill.css";
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
 }
-
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 a {
   text-decoration: none;
   color: white;
