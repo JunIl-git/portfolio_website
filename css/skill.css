@@ -2,6 +2,7 @@
   background: black;
   color: white;
   font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
 }
 
 #skills p {
@@ -25,6 +26,7 @@
 .skillset__container__description {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
 }
 
 .skillset__container__gauge_max {
