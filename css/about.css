@@ -1,7 +1,3 @@
-#about {
-  font-family: "Nanum Gothic", sans-serif;
-}
-
 .section {
   text-align: center;
   padding: 60px;
@@ -13,7 +9,6 @@
 }
 
 .about__contents {
-  width: 1000px;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -34,13 +29,11 @@
 
 .about__contents__profile h4 {
   margin-bottom: 10px;
-  font-weight: var(--weight-regular);
 }
 
 .about__language {
   display: flex;
   justify-content: space-evenly;
-  font-family: "Nanum Gothic", sans-serif;
 }
 
 .about__language__circle {

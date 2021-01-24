@@ -1,8 +1,6 @@
 #skills {
   background: black;
   color: white;
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: bold;
 }
 
 #skills p {
@@ -13,6 +11,8 @@
   padding: 20px;
   height: 250px;
   background-color: #46474b;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .skillset__title {

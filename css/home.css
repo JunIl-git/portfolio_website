@@ -1,14 +1,11 @@
 #home {
   background: url("../imgs/portfolio_bg2.jpg") no-repeat center/cover;
   padding: 40px;
-  height: 100%;
 }
 
 .home__title {
   text-align: center;
   color: white;
-  font-weight: var(--weight-semi-bold);
-  font-family: "Nanum Gothic", sans-serif;
   font-size: 32px;
   margin: 200px 0 70px 0;
 }
@@ -17,8 +14,7 @@
 .home__description2 {
   color: white;
   text-align: center;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }
 
 .home__box {
@@ -26,7 +22,6 @@
   height: 300px;
   margin: 0 auto;
   margin-top: 100px;
-  font-family: "Balsamiq Sans", cursive;
   position: relative;
 }
 
@@ -48,7 +43,6 @@
   border-radius: 5px;
   text-align: center;
   line-height: 50px;
-  font-weight: 700;
   font-size: var(--font-regular);
 }
 

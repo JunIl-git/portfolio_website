@@ -1,0 +1,30 @@
+#contact {
+  background: url("../imgs/portfolio_concat_bg.jpg") no-repeat center/cover;
+  height: 500px;
+  position: relative;
+  color: white;
+}
+
+.contact__title {
+  margin-bottom: 80px;
+}
+#contact .contact__opacity {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__standard {
+  font-size: var(--font-regular);
+  margin: 20px;
+}
+
+.contact__copyright {
+  font-size: 20px;
+  margin: 100px;
+  font-family: "Noto Sans KR", sans-serif;
+}
