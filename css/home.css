@@ -1,13 +1,49 @@
 #home {
   background: url("../imgs/portfolio_bg2.jpg") no-repeat center/cover;
-  padding: 40px;
+  padding: 40px 0;
+}
+
+.home__title__contanier {
+  text-align: center;
+  max-width: 372.97px;
+  margin: 100px auto;
 }
 
 .home__title {
-  text-align: center;
+  position: relative;
   color: white;
+  line-height: 32px;
   font-size: 32px;
-  margin: 200px 0 70px 0;
+}
+
+.home__title::after {
+  width: 1px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: white;
+  animation: blink 1.2s 1.3s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    background: #fff;
+  }
+  49% {
+    background: #fff;
+  }
+  50% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #fff;
+  }
 }
 
 .home__description1,
@@ -17,11 +53,40 @@
   font-size: var(--font-small);
 }
 
+.home__description1 {
+  animation: slide_1 1.5s linear;
+}
+
+@keyframes slide_1 {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.home__description2 {
+  animation: slide_2 1.5s linear;
+}
+@keyframes slide_2 {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .home__box {
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -63,4 +128,34 @@
 .home__box__title {
   color: rgba(0, 0, 0, 0.7);
   transform: rotate(-45deg);
+}
+
+.home__box__shadow {
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: shadow 1s infinite linear;
+}
+
+@keyframes shadow {
+  from {
+    transform: scale(1.03);
+  }
+  to {
+    transform: scale(1.3);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

@@ -1,5 +1,6 @@
 #contact {
   background: url("../imgs/portfolio_concat_bg.jpg") no-repeat center/cover;
+  width: 100%;
   height: 500px;
   position: relative;
   color: white;
@@ -20,11 +21,11 @@
 
 .contact__standard {
   font-size: var(--font-regular);
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .contact__copyright {
-  font-size: 20px;
-  margin: 100px;
+  font-size: 16px;
+  margin-top: 80px;
   font-family: "Noto Sans KR", sans-serif;
 }

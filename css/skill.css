@@ -4,7 +4,8 @@
 }
 
 #skills p {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 1000px;
 }
 
 .skillset {
@@ -34,32 +35,13 @@
   background: #2f3031;
 }
 
-.skillset__container__gauge__html {
-  width: 90%;
-  height: 100%;
-  background: #e1b12c;
-}
-
-.skillset__container__gauge__css {
-  width: 80%;
-  height: 100%;
-  background: #e1b12c;
-}
-
-.skillset__container__gauge__js {
-  width: 70%;
-  height: 100%;
-  background: #e1b12c;
-}
-
-.skillset__container__gauge__react {
-  width: 65%;
-  height: 100%;
-  background: #e1b12c;
-}
-
+.skillset__container__gauge__html,
+.skillset__container__gauge__css,
+.skillset__container__gauge__js,
+.skillset__container__gauge__react,
 .skillset__container__gauge__ts {
-  width: 60%;
+  width: 0;
   height: 100%;
   background: #e1b12c;
+  transition: width 1s ease;
 }

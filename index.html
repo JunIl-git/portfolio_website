@@ -6,7 +6,7 @@
     <title>Junil's Portfolio</title>
     <meta name="description" content="Portfolio for would-renowned software engineer Junil">
     <meta name="author" content="Junil">
-    <link rel="icon" href="./imgs/favicon.ico"/>
+    <link rel="icon" href="./imgs/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,26 +19,62 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fas fa-code"></i>
-            <a href="#">ShinJunIl</a>
+            <i class="fab fa-staylinked"></i>
+            <h2 class="navbar__title"><a href="#">ShinJunil</a></h1>
         </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item"><button>Home</button></li>
-                <li class="navbar__menu__item"><button>About</button> </li>
-                <li class="navbar__menu__item"><button>Skills</button></li>
-                <li class="navbar__menu__item"><button>My work</button></li>
-                <li class="navbar__menu__item"><button>Contact</button></li>
-            </ul>
+        <div class="navbar__menubar">
+            <input type="checkbox" class="checkbox" >
+            <div class="first__line"></div>
+            <div class="second__line"></div>
+            <div class="third__line"></div>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+                <input type="checkbox" id="home">
+                <label for="home">
+                    <button>Home</button>
+                </label>
+            </li>
+            <li class="navbar__menu__item">
+                <input type="checkbox" id="about">
+                <label for="about">
+                    <button>About</button> 
+                </label> 
+            </li>
+            <li class="navbar__menu__item">
+                <input type="checkbox">
+                <label for="">
+                    <button>Skills</button>
+                </label> 
+            </li>
+            <li class="navbar__menu__item">
+                <input type="checkbox">
+                <label for="">
+                    <button>My work</button>
+                </label> 
+            </li>
+            <li class="navbar__menu__item">
+                <input type="checkbox">
+                <label for="">
+                    <button>Contact</button>
+                </label> 
+            </li>
+        </ul>
     </nav>
     <!-- Home -->
-    <section id="home">
-        <h3 class="home__title">프론트엔드 개발자 신준일입니다.</h3>
+    <section id="home" class="section">
+        <div class="home__title__contanier">
+            <span class="home__title"></span>
+        </div>
         <p class="home__description1">Javascript를 주로 사용하는 프론트엔드 주니어 개발자입니다. </p>
         <p class="home__description2">최근에는 React와 Typescript에 많은 관심을 가지고 있습니다.</p>
         <div class="home__box">
-            <div class="home__box__box"><div class="home__box__first-name">Shin</div>
-            <div class="home__box__second-name">JunIl</div>
-            <h1 class="home__box__title">Front_end</h1></div>
+            <div class="home__box__box">
+                <div class="home__box__first-name">Shin</div>
+                <div class="home__box__second-name">JunIl</div>
+                <h1 class="home__box__title">Front_end</h1>
+                <div class="home__box__shadow"></div>
+            </div>
         </div>
     </section>
     <!-- About -->
@@ -57,25 +93,25 @@
         <div class="about__language">
             <div class="about__language__html ">
                 <div class="about__language__circle">
-                    <i class="fab fa-html5 fa-10x"></i>
+                    <i class="fab fa-html5 fa-5x"></i>
                 </div>
                 <h4>HTML</h4>
             </div>
             <div class="about__language__css ">
                 <div class="about__language__circle">
-                    <i class="fab fa-css3-alt fa-10x"></i>
+                    <i class="fab fa-css3-alt fa-5x"></i>
                 </div>
                 <h4>CSS</h4>
             </div>
             <div class="about__language__js ">
                 <div class="about__language__circle">
-                    <i class="fab fa-js-square fa-10x"></i>
+                    <i class="fab fa-js-square fa-5x"></i>
                 </div>
                 <h4>Javascript</h4>
             </div>
             <div class="about__language__react ">
                 <div class="about__language__circle">
-                    <i class="fab fa-react fa-10x"></i>
+                    <i class="fab fa-react fa-5x"></i>
                 </div>
                 <h4>React</h4>
             </div>
@@ -231,11 +267,13 @@
                 </a>
             </div>
             <div class="contact__copyright">
-                <h5>Copyright@2021. Web developer 신준일. All rights reserved.</h5>
-                <h5>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</h5>
+                <div>Copyright@2021. Web developer 신준일. All rights reserved.</div>
+                <div>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</div>
             </div>
         </div>
     </section>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/scroll.js"></script>
+    
 </body>
 </html>

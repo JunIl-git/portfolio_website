@@ -1,5 +1,6 @@
 #navbar {
   width: 100%;
+  height: 80px;
   z-index: 1;
   display: flex;
   background: rgba(00, 00, 00, 0.8);
@@ -14,17 +15,34 @@
 
 .navbar__menu {
   display: flex;
+  transition: 0.5s all;
 }
 
 .navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--font-medium);
+}
+
+.navbar__logo h2 {
+  margin-left: 5px;
 }
 
 .navbar__menu__item {
   padding: 8px 12px;
   cursor: pointer;
-  transition: all 0.2s;
   border-radius: 5px;
+  position: relative;
+}
+
+.navbar__menu__item input {
+  width: 73px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
 }
 
 /*  */
@@ -37,12 +55,9 @@
   height: 40px;
   font-size: var(--font-regular);
   cursor: pointer;
-  transition: 800ms ease all;
   outline: none;
 }
-.navbar__menu__item button:hover {
-  color: white;
-}
+
 .navbar__menu__item button:before,
 .navbar__menu__item button:after {
   content: "";
@@ -52,7 +67,6 @@
   height: 2px;
   width: 0;
   background: white;
-  transition: 400ms ease all;
 }
 .navbar__menu__item button:after {
   top: inherit;
@@ -63,6 +77,84 @@
 .navbar__menu__item button:hover:before,
 .navbar__menu__item button:hover:after {
   width: 100%;
+  background: #e1b12c;
   transition: 800ms ease all;
 }
 /*  */
+
+.navbar__menubar {
+  display: none;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+
+.navbar__menubar input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.first__line,
+.second__line,
+.third__line {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: #e1b12c;
+  border-radius: 3px;
+  transition: 0.5s all;
+}
+
+.first__line {
+  top: 0;
+  left: 0;
+}
+
+.second__line {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.third__line {
+  bottom: 0;
+  left: 0;
+}
+
+.navbar__menubar input:checked ~ .first__line {
+  transform: translateY(-50%) rotate(45deg);
+  top: 50%;
+}
+
+.navbar__menubar input:checked ~ .second__line {
+  opacity: 0;
+}
+
+.navbar__menubar input:checked ~ .third__line {
+  transition: 1s all ease-out;
+  transform: translateY(-50%) rotate(-225deg);
+  top: 50%;
+}
+
+/*        반응형         */
+
+@media screen and (max-width: 768px) {
+  .navbar__menubar {
+    display: block;
+  }
+
+  .navbar__menu {
+    background: rgba(114, 114, 114, 0.8);
+    position: absolute;
+    top: 100%;
+    right: -100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 0 0 10px;
+  }
+}
