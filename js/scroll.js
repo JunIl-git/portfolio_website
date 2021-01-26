@@ -1,8 +1,16 @@
-const navbar = document.querySelectorAll(".navbar__menu__item");
+const navbar = document.querySelectorAll(".nav__input");
 
-
+function automaticChange() {
+    
+}
 function navClick(e){
- console.dir(e)
+ const target = e.target;
+ const link = target.dataset.link;
+ const scrollTo = document.querySelector(link);
+ scrollTo.scrollIntoView(
+     {behavior : "smooth"}
+ );
+
 }
 
 function aboutScroll(){
@@ -26,8 +34,11 @@ function skillScroll(){
         const ts = document.querySelector('.skillset__container__gauge__ts').style.width = "60%";;
     }
 }
+
+
 for(let i=0; i<5; i++){
     navbar[i].addEventListener("click",navClick);
 }
 window.addEventListener("scroll", skillScroll);
-window.addEventListener("scroll", aboutScroll)
+window.addEventListener("scroll", aboutScroll);
+window.addEventListener("scroll",automaticChange);
