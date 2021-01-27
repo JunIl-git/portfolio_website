@@ -68,3 +68,51 @@ p {
   font-weight: var(--weight-regular);
   margin: 4px 0;
 }
+
+.upBtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #e1b12c;
+  cursor: auto;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.upBtn:hover .upBtn__innerBox {
+  transition: all 0.5s;
+  animation: repeatUpDown 1s infinite linear;
+}
+
+@keyframes repeatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+}
+.upBtn__index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  width: inherit;
+  height: inherit;
+}

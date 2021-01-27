@@ -29,3 +29,9 @@
   margin-top: 80px;
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.contact__links .github:hover,
+.contact__links .instagram:hover {
+  color: rgb(97, 96, 96);
+  transition: all 0.3s;
+}

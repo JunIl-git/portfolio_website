@@ -5,6 +5,11 @@
   overflow: hidden;
 }
 
+#about {
+  margin-top: 937px;
+  background: white;
+}
+
 .about__contents {
   display: flex;
   justify-content: space-evenly;

@@ -30,7 +30,7 @@
         </div>
         <ul class="navbar__menu">
             <li class="navbar__menu__item">
-                <input type="radio" name="navbar" id="homeInput" class="nav__input" data-link="#home">
+                <input type="radio" checked name="navbar" id="homeInput" class="nav__input" data-link="#home">
                 <label for="homeInput">
                     <div class="click">Home</div>
                 </label>
@@ -63,19 +63,21 @@
     </nav>
     <!-- Home -->
     <section id="home" class="section">
-        <div class="home__title__contanier">
-            <span class="home__title"></span>
-        </div>
-        <p class="home__description1">Javascript를 주로 사용하는 프론트엔드 주니어 개발자입니다. </p>
-        <p class="home__description2">최근에는 React와 Typescript에 많은 관심을 가지고 있습니다.</p>
-        <div class="home__box">
-            <div class="home__box__box">
-                <div class="home__box__first-name">Shin</div>
-                <div class="home__box__second-name">JunIl</div>
-                <h1 class="home__box__title">Front_end</h1>
-                <div class="home__box__shadow"></div>
+        <div class="home__opacityBox">
+            <div class="home__title__contanier">
+                <span class="home__title"></span>
             </div>
-        </div>
+            <p class="home__description1">Javascript를 주로 사용하는 프론트엔드 신입 개발자입니다. </p>
+            <p class="home__description2">최근에는 React와 Typescript에 많은 관심을 가지고 있습니다.</p>
+            <div class="home__box">
+                <div class="home__box__box">
+                    <div class="home__box__first-name">Shin</div>
+                    <div class="home__box__second-name">JunIl</div>
+                    <h1 class="home__box__title">Front_end</h1>
+                    <div class="home__box__shadow"></div>
+                </div>
+            </div>
+        </div>    
     </section>
     <!-- About -->
     <section id="about" class="section">
@@ -259,10 +261,10 @@
                 <span>010-4126-5138</span>
             </div>
             <div class="contact__links contact__standard">
-                <a href="https://github.com/JunIl-git" target="blank">
+                <a href="https://github.com/JunIl-git" target="blank" class="github">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
-                <a href="https://www.instagram.com/jun_1ee/" target="blank">
+                <a href="https://www.instagram.com/jun_1ee/" target="blank" class="instagram">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
             </div>
@@ -272,6 +274,12 @@
             </div>
         </div>
     </section>
+    <div class="upBtn">
+        <div class="upBtn__index" data-link="#home"></div>
+        <div class="upBtn__innerBox">
+            <i class="fas fa-angle-double-up fa-2x"></i>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
     

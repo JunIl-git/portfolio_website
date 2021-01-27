@@ -1,10 +1,43 @@
 const navbar = document.querySelectorAll(".nav__input");
+const navigation = document.querySelector("#navbar");
+const upBtn =document.querySelector('.upBtn');
+function appearNav(){
+    const scrollY = window.scrollY;
+    if(scrollY === 0){
+        navigation.style.background = "transparent";
+    } else {
+        navigation.style.background = "rgba(0,0,0,0.8)";
+    }
+    if(scrollY > 300){
+        upBtn.style.opacity = "1";
+        upBtn.style.pointerEvents = "auto";
+        upBtn.style.cursor = "pointer";
+    } else {
+        upBtn.style.opacity = "0";
+        upBtn.style.pointerEvents = "none";
+        upBtn.style.cursor = "auto";
+    }
+}
 
 function automaticChange() {
-    
+    const home = document.querySelector(".home__opacityBox");
+    const scrollY = window.scrollY;
+    const opacity = 1 - (scrollY / 300);
+    home.style.opacity = opacity;
 }
-function navClick(e){
+function navClickScroll(e){
  const target = e.target;
+ const id = target.id;
+ if(target.dataset.link === "#home"){
+     window.scroll(
+         {
+             top : 0,
+             left : 0,
+             behavior : "smooth"
+         }
+    
+    )
+ } 
  const link = target.dataset.link;
  const scrollTo = document.querySelector(link);
  scrollTo.scrollIntoView(
@@ -37,8 +70,10 @@ function skillScroll(){
 
 
 for(let i=0; i<5; i++){
-    navbar[i].addEventListener("click",navClick);
+    navbar[i].addEventListener("click",navClickScroll);
 }
 window.addEventListener("scroll", skillScroll);
 window.addEventListener("scroll", aboutScroll);
-window.addEventListener("scroll",automaticChange);
+window.addEventListener("scroll", automaticChange);
+window.addEventListener("scroll", appearNav);
+upBtn.addEventListener("click",navClickScroll);
