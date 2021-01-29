@@ -7,15 +7,65 @@
 }
 
 .work__categories {
-  width: 500px;
+  max-width: 1000px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0 auto 30px;
+  flex-wrap: wrap;
 }
 
-/*  */
-.work__categories button {
-  width: 250px;
+.work__flexbox {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work__categories label {
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.work__categories input {
+  display: none;
+}
+
+.work__categories input:checked + label::before,
+.work__categories input:checked + label::after {
+  width: 100%;
+  transition: 800ms ease all;
+  background: black;
+}
+.work__categories input:checked + label {
+  background: white;
+  color: black;
+}
+
+.work__categories input:checked + label span {
+  background: white;
+  color: #e1b12c;
+}
+
+.work__categories span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: #e1b12c;
+  color: white;
+  border-radius: 50%;
+}
+.work__categories label:hover span {
+  background: transparent;
+  transition: all 0.5s;
+  color: #e1b12c;
+}
+
+/*  hover animaition */
+.work__categories label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   background: black;
   color: #fff;
   border: none;
@@ -26,12 +76,12 @@
   transition: 0.3s ease color, 0.3s ease background;
   outline: none;
 }
-.work__categories button:hover {
+.work__categories label:hover {
   background: #fff;
   color: black;
 }
-.work__categories button:before,
-.work__categories button:after {
+.work__categories label:before,
+.work__categories label:after {
   content: "";
   position: absolute;
   top: 0;
@@ -40,14 +90,14 @@
   width: 0;
   background: black;
 }
-.work__categories button:after {
+.work__categories label:after {
   top: inherit;
   right: inherit;
   left: 0;
   bottom: 0;
 }
-.work__categories button:hover:before,
-.work__categories button:hover:after {
+.work__categories label:hover:before,
+.work__categories label:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
@@ -63,6 +113,11 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 5px;
+  display: block;
+}
+
+.invisible {
+  display: none;
 }
 
 .work__projects:hover .work__description {
@@ -74,7 +129,20 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 650px;
+  height: 420px;
   margin: auto;
+  overflow: auto;
+}
+
+.clickEvent__out {
+  transform: scale(0.6) translateY(30px);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.clickEvent__in {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .work__projects img {

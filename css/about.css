@@ -20,6 +20,7 @@
 }
 
 .about__contents__avatar {
+  width: 376px;
   transition: all 1s;
   border: 5px solid black;
   border-radius: 20px;
@@ -30,8 +31,8 @@
 .about__contents__profile {
   transition: all 1s;
   text-align: left;
-  width: 347px;
-  height: 333px;
+  width: 376px;
+  height: 375px;
   padding: 40px;
   transform: translateX(50px);
   opacity: 0;
@@ -68,4 +69,10 @@
 
 .about__contents__profile h4 {
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__language {
+    display: none;
+  }
 }

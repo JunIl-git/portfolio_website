@@ -23,10 +23,10 @@
             <h2 class="navbar__title"><a href="#">ShinJunil</a></h1>
         </div>
         <div class="navbar__menubar">
-            <input type="checkbox" class="checkbox" >
-            <div class="first__line"></div>
-            <div class="second__line"></div>
-            <div class="third__line"></div>
+            <input type="checkbox" class="checkbox" id="menu">
+                <div class="first__line"></div>
+                <div class="second__line"></div>
+                <div class="third__line"></div>  
         </div>
         <ul class="navbar__menu">
             <li class="navbar__menu__item">
@@ -179,16 +179,42 @@
         <h1>My work</h1>
         <h3>Projects</h2>
         <div class="work__categories">
-            <button class="work__categories__btn">All <span class="category__count">2</span></button>
-            <button class="work__categories__btn">Front-end <span class="category__count">2</span></button>
-            <button class="work__categories__btn">Back-end <span class="category__count"></span></button>
-            <button class="work__categories__btn">Mobile <span class="category__count"></span></button>
+            <div class="work__flexbox">
+                <input type="radio" checked id="all" name="categories">
+                <label for="all" class="work__categories__btn" data-filter="*">
+                    <div class="text">
+                        All 
+                    </div>
+                    <span class="category__count">2</span>
+                </label>
+                <input type="radio" id="front" name="categories">
+                <label for="front" class="work__categories__btn" data-filter="front_end">
+                    <div class="text">
+                        Front-end 
+                    </div>                        
+                    <span class="category__count">2</span>
+                </label>
+            </div>
+            <div class="work__flexbox">
+                <input type="radio" id="back" name="categories">
+                <label for="back" class="work__categories__btn" data-filter="back-end">
+                    <div class="text">
+                        Back-end 
+                    </div>
+                </label>
+                <input type="radio" id="mb" name="categories">
+                <label for="mb" class="work__categories__btn" data-filter="mobile">
+                    <div class="text">
+                        Mobile 
+                    </div>
+                </label>
+            </div>
         </div>
         <!-- 작업물 넣는 곳 -->
         <div class="work__container">
-            <div class="work__projects">
+            <div class="work__projects"  data-type="front_end">
             <!-- 첫번째 작업물 주소넣기  -->
-            <a href="https://junil-git.github.io/vanillaJS_momentum/#/ class="project" target="blank"> 
+            <a href="https://junil-git.github.io/vanillaJS_momentum/#/" class="project" target="blank"> 
                 <img class="work__project__img" src="./imgs/momentum.PNG" alt="momentum"> 작업물 이미지
                 <div class="work__description">
                     <h3>JS Momentum</h3>

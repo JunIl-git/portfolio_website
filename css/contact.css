@@ -35,3 +35,10 @@
   color: rgb(97, 96, 96);
   transition: all 0.3s;
 }
+
+@media screen and (max-width: 768px) {
+  .contact__copyright {
+    margin-top: 40px;
+    font-size: 13px;
+  }
+}
