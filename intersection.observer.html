@@ -39,7 +39,15 @@
     <script>
         const boxes = document.querySelectorAll('.box');
 
-        console.log(boxes);
+        const observer = new IntersectionObserver((entries, observer)=> {
+            entries.forEach(entry => {
+                console.log(entry.target);
+            })
+        })
+
+        boxes.forEach((box)=>{
+            observer.observe(box);
+        })
     </script>
 </body>
 </html>

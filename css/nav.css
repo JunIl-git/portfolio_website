@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.navbar__menu__item label {
+.navbar__menu__item + div {
   width: 73px;
 }
 
@@ -83,12 +83,12 @@
 .navbar__menu__item .click:hover:before,
 .navbar__menu__item .click:hover:after {
   width: 100%;
-  background: #white;
+  background: white;
   transition: 800ms ease all;
 }
 
-.navbar__menu__item input:checked ~ label .click::before,
-.navbar__menu__item input:checked ~ label .click::after {
+.navbar__menu__item input:checked + div .click::before,
+.navbar__menu__item input:checked + div .click::after {
   width: 100%;
   background: #e1b12c;
   transition: 800ms ease all;
