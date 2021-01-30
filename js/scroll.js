@@ -7,20 +7,23 @@ const projects = document.querySelectorAll('.work__projects');
 const workContainer = document.querySelector('.work__container');
 const sections = document.querySelectorAll('.section');
 
-
+const sectionInnerHeight = sections[0].offsetHeight * 0.5
 const homeTop = sections[0].offsetTop;
-const aboutTop = sections[1].offsetTop;
-const skillsTop = sections[2].offsetTop;
-const workTop = sections[3].offsetTop;
-const contactTop = sections[4].offsetTop;
-
+const aboutTop = (sections[1].offsetTop - sectionInnerHeight);
+const skillsTop = (sections[2].offsetTop - sectionInnerHeight);
+const workTop = (sections[3].offsetTop - sectionInnerHeight);
+const contactTop = (sections[4].offsetTop - sectionInnerHeight);
 function navActivation(){
-    console.log(scrollY);
-    console.log(navInput)
-    if(homeTop <= scrollY <= aboutTop){
+    if(scrollY >= 0 && scrollY <=aboutTop){
         navInput[0].checked = true;
-    } else {
-        navInput[0].checked = false;
+    } else if(scrollY > aboutTop && scrollY <=skillsTop){
+        navInput[1].checked = true;
+    } else if(scrollY > skillsTop && scrollY <=workTop){
+        navInput[2].checked = true;
+    } else if(scrollY > workTop && scrollY <= contactTop){
+        navInput[3].checked = true;
+    } else if( scrollY) {
+        navInput[4].checked = true;
     }
 }
 
