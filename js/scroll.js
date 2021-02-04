@@ -26,7 +26,6 @@ function navActivation(){
         navInput[4].checked = true;
     }
 }
-
 function handleSortWork(e){ //work에서 menu 클릭 시 animation
     workContainer.classList.remove('clickEvent__in')
     workContainer.classList.add('clickEvent__out');
